@@ -54,7 +54,7 @@ int main(void)
 
 void Init()
 {
-	system("title ÞÌÙÍ");
+	system("title å››ç›®");
 	system("mode con cols=42 lines=27");
 	
 	CONSOLE_CURSOR_INFO consoleCursorInfo;
@@ -86,9 +86,9 @@ void DrawBoard()
 		for (x = 0; x < BOARD_WIDTH; x++)
 		{
 			Gotoxy((CONSOLE_WIDTH >> 2) + (x * 3) - 1, (y * 2) + 5);
-			printf("¦¢ %c¦¢", GetBoardMark(board[x + BOARD_WIDTH * y]));
+			printf("â”‚ %câ”‚", GetBoardMark(board[x + BOARD_WIDTH * y]));
 			Gotoxy((CONSOLE_WIDTH >> 2) + (x * 3) - 1, (y * 2) + 6);
-			printf("¦¢  ¦¢");
+			printf("â”‚  â”‚");
 		}
 	}
 }
